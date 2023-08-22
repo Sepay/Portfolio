@@ -66,15 +66,20 @@ body {
   .wrapper{
     display: flex;
     position: relative;
-    font-size: 10px;
+    font-size: 12px;
+    
   }
   
   .wrapper .sidebar{
-    width: 150px;
+    width: 100px;
     height: 100%;
     background: black;
     padding: 30px 0px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
   
   .wrapper .sidebar h2{
@@ -82,77 +87,54 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+    margin-left: 25px;
+  }
+  .wrapper .sidebar ul {
+    margin-top: 230px;
+    list-style-type: none;
+    align-items: left;
+    
   }
   
   .wrapper .sidebar ul li{
     padding: 15px;
-    border-bottom: 1px solid #bdb8d7;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-top: 20px;
+    
   }    
   
   .wrapper .sidebar ul li a{
     color: #bdb8d7;
-    display: block;
+    display: flex;
+  
   }
   
   .wrapper .sidebar ul li a .fas{
-    width: 25px;
+    margin-right: 50px;
     color: #027D13;
+    
+    
+  
   }
   
   .wrapper .sidebar ul li:hover{
-    background-color: #594f8d;
+    background-color: darkgreen;
   }
       
   .wrapper .sidebar ul li:hover a{
     color: #fff;
   }
-   
-  .wrapper .sidebar .social_media{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
   
-  .wrapper .main_content{
-    width: 100%;
-    margin-left: 200px;
-  }
-  
-  .wrapper .main_content .header{
-    padding: 20px;
-    background: #fff;
-    color:#027D13;
-    border-bottom: 1px solid #e0e4e8;
-  }
-  
-  .wrapper .main_content .info{
-    margin: 20px;
-    color: #027D13;
-    line-height: 25px;
-  }
-  
-  .wrapper .main_content .info div{
-    margin-bottom: 20px;
-  }
 
   .intro {
-    width: 1500px;
-    font-size: 15px;
-    margin-top: 550px;
-    margin-right: 300px;
+    width: 3500px;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 675px;
+    margin-right: 100px;
     justify-content: center;
     color: white;
+    font-family: 'Roboto', sans-serif;
   }
   .aboutme {
     color: white;
-  }
-  
-  @media (max-height: 500px){
-    .social_media{
-      display: flex;
-    }
   }
