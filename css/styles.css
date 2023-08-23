@@ -1,140 +1,119 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
-    position: relative; /* Add this to make ::before absolute positioning work */
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    min-height: 100vh;
-    overflow: hidden;
+    background: #090f2d;
+    color: aliceblue;
 }
   
-  body::before {
-    content: "";
-    background-image: url('../images/Background.jpg'); /* Path to your image in the images folder */
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Background2.png'); /* Path to your image in the images folder */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.7; /* Set the desired opacity */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-position: center; /* Set the desired opacity */
+ 
   }
-  .vertical-bar {
-    background-color: grey; /* Change to your desired color */
-    width: 50px;
-    height: 100%;
+  .container{
+    padding: 15px 7%;
+  }
+  nav{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white; /* Text color */
-}
-  .container {
-    margin-top: 200px;
-    display: flex;
-    align-items: flex-start; /* Align content to the top */
-    margin-left: 200px;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .title {
-    text-align: center;
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 1px; /* Add some top margin */
-    font-family: 'Overpass', sans-serif;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
   }
-  .subtitle {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Arvo', serif;
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 20px;
   }
-
-  .wrapper{
-    display: flex;
+  nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
     position: relative;
-    font-size: 12px;
-    
   }
-  
-  .wrapper .sidebar{
-    width: 100px;
-    height: 100%;
-    background: black;
-    padding: 30px 0px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  nav ul li a:hover {
+    color: aliceblue;
   }
-  
-  .wrapper .sidebar h2{
-    color: #027D13;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: 25px;
-  }
-  .wrapper .sidebar ul {
-    margin-top: 230px;
-    list-style-type: none;
-    align-items: left;
-    
-  }
-  
-  .wrapper .sidebar ul li{
-    padding: 15px;
-    margin-top: 20px;
-    
-  }    
-  
-  .wrapper .sidebar ul li a{
-    color: #bdb8d7;
-    display: flex;
-  
-  }
-  
-  .wrapper .sidebar ul li a .fas{
-    margin-right: 50px;
-    color: #027D13;
-    
-    
-  
-  }
-  
-  .wrapper .sidebar ul li:hover{
-    background-color: darkgreen;
-  }
-      
-  .wrapper .sidebar ul li:hover a{
-    color: #fff;
-  }
-  
-
-  .intro {
-    width: 3500px;
+  .title{
+    margin-top: 13%;
     font-size: 30px;
-    margin-left: 200px;
-    margin-top: 675px;
-    margin-right: 100px;
     justify-content: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
   }
-  .aboutme {
+  .title h1{
+    font-size: 80px;
+  }
+  .title h1 span{
+    color: aqua;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .subtitle{
+    font-size: 45px;
+  }
+  /* -----------------about---------------- */
+  #about{
+    padding: 80px 10%;
+  }
+  .aboutleft{
+    flex-basis: 35%;
+  }
+  .aboutleft img{
+    height: 600px;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .aboutright{
+    flex-basis: 60%;
+    font-size: 24px;
+  }
+
+  /*---------contact----------------*/
+
+  .contact-left{
+    flex-basis: 35%;
+    font-size: 20px;
+  }
+  .contact-left p{
+    margin-top: 20px;
+  }
+  .contact-left p i{
+    color: aqua;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  .social-icons a i{
+    margin-top: 30px;
+    color: aqua;
+  } 
+  .contact-right{
+    flex-basis: 50%;
+  }
+
+  .contact-right form{
+    width: 100%;
+  }
+
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #182957;
+    padding: 15px;
+    margin: 15px 0;
     color: white;
+    font-size: 18px;
+    border-radius: 6px;
   }

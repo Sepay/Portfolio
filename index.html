@@ -11,29 +11,66 @@
 <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-        <h2>R</h2>
-        <ul>
-            <li><a href="about.html"><i class="fas fa-user fa-2x"></i></a></li>
-            <li><a href="#"><i class="fas fa-address-book fa-2x"></i></a></li>
-            <li><a href="#"><i class="fas fa-map-pin fa-2x"></i></a></li>
-        </ul> 
-    </div>
-    </div>
-  <div class="container">
-      <div class="title">
-        CODING <nav></nav>through DNA
+  <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="title">
+          <h1>Coding <br>through <span>DNA</span></h1>
+          <p>A bioinformatics software developer portfolio</p>
+        </div>
       </div>
-      <div class="subtitle">  
-          A Bioinformatics Software Developer Portfolio
-      </div>
-    </div>
-  <div class="intro">
-    Hey there! I'm Rodrigo, and I'm thrilled to have you here on my portfolio website. At 24, with a degree in Bioinformatics under my belt in 2023,
-     I've started a journey where I'm weaving together my passion for software en
+  </div>
+ <!-- --------------about------------ -->
 
-  </div>  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutleft">
+          <img src="images/ava.png">
+        </div>
+        <div class="aboutright">
+          <div class="subtitle">
+            <h1>About Me</h1>
+          </div>
+          <p>Hey there! I'm Rodrigo, and I'm thrilled to have you here on my portfolio website. At 24, with a degree in Bioinformatics under my belt in 2023,
+            I've started a journey where I'm weaving together my passion for software and game development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------contact-------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+              <h1>Contact Me</h1>
+              <p><i class="fas fa-envelope"></i>pntorodrig01998@gmail.com</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rodrigo-pinto-28367a287/"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+             </div>
+        </div>
+        
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="js/script.js"></script>
 </body>
 </html>
