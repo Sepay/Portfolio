@@ -6,9 +6,17 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     background: #090f2d;
     color: aliceblue;
+}
+.subtitle{
+  font-size: 45px;
 }
   
   #header {
@@ -59,9 +67,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .subtitle{
-    font-size: 45px;
-  }
+  
   /* -----------------about---------------- */
   #about{
     padding: 80px 5%;
@@ -154,29 +160,54 @@ body {
   }
 
   /* -------------project----------- */
+  #projects{
+    padding: 30px 0;
+  }
+  .worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .work img{
+    border-radius: 10px;
+    display: block;
+    
+  }
+  .layer{
+    width: 79%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), aqua);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    transition: height 0.4s;
+  }
+  .layer h3{
+    font-size: 20px;
+    margin-bottom: 20px;
 
-  .projectleft{
-    flex-basis: 28%;
-    margin-top: 150px;
-    margin-left: 80px;
   }
-  .projectcenter{
-    flex-basis: 28%;
-  }
-  .projectright{
-    flex-basis: 28%;
-    margin-top: 150px;
-  }
-  .projectright img{
-    width: 90%;
-    height: 640px;
+
+  .work:hover .layer{
+    height: 100%;
   }
   
-  .projectcenter img {
-    margin-top: 40px;
-    width: 93%;
-    height: 640px;
-  }
   
   #morework{
     width: 170px;
@@ -185,13 +216,14 @@ body {
     border-color: aqua;
     color: aliceblue;
     border-radius: 7px;
-    margin-top: 20px;
-    margin-left: 120px;
+    margin-left: 890px;
     transition: 0.2s;
     font-size: 15px;
+    margin-bottom: 20px;
   }
   #morework:hover{
     background-color: aqua;
     color: black;
     
   }
+  

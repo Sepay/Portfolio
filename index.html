@@ -15,9 +15,9 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="title">
@@ -53,21 +53,40 @@
   <!-- ----------------projects---------- -->
   <div id="projects">
     <div class="container">
-      <div class="row">
-        <div class="projectleft">
-          <img src="images/portfolio.png">
-        </div>
-        <div class="projectcenter">
-          <div class="subtitle"><h1>My Work</h1></div>
-          <img src="images/earnalyzer.jpg">
-          <button id="morework" type="submit"> See More</button>
-        </div>
-        <div class="projectright">
-          <img src="images/phylo.jpg">
-        </div>
+      <div class="subtitle">
+        <h1>My Work</h1>
       </div>
+      <div class="worklist">
+        <div class="work">
+            <img src="images/portfolio.png" >
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>I've built this portfolio from scratch, it was my first project in the frontend development field
+              </p>
+            </div>
+        </div>
+        <div class="work">
+          <img src="images/earnalyzer.jpg" >
+          <div class="layer">
+            <h3>Earnalyzer</h3>
+            <p>This is a APR comparator web application that I made in my internship at CGI. Basically compares the APR values of exchange websites.
+            </p>
+          </div>
+      </div>
+      <div class="work">
+        <img src="images/phylo.jpg" >
+        <div class="layer">
+          <h3>Automagic Phylogenetics</h3>
+          <p>This is my biggest project at the moment and it was made with some of my classmates (6). My function was to handle and transform the data.
+          </p>
+        </div>
+    </div>
+
+      </div>
+
     </div>
   </div>
+  <button id="morework" type="submit"> See More</button>
   <!-- ---------------------contact-------------- -->
   <div id="contact">
     <div class="container">
