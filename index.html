@@ -43,7 +43,32 @@
               my journey has been fueled by curiosity and a love for technology. Bioinformatics introduced me to the power of coding to decipher complex biological data,
               while my lifelong fascination with gaming led me to merge science and entertainment.
             </p>
-            <button id="moreaboutme" type="submit"> More About Me</button>
+            <div class="row">
+              <div class="tabtitles">
+                <p class="tab-links active-link" onclick= "opentab('skills')" >Skills</p>
+                <p class="tab-links"onclick= "opentab('experience')">Experience</p>
+                <p class="tab-links"onclick= "opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+               <ul>
+                <li><span>Java</span><br>Web Application</li>
+                <li><span>Python</span><br>Data Management and Scripts</li>
+                <li><span>HTML/CSS/JS</span><br>Web Design</li>
+                <li><span>Unity/C#</span><br>Game Development</li>
+               </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                 <li><span>March 2023 - July 2023</span><br>Java Developer Trainee Internship - CGI</li>
+                 <li><span>Autumn 2022</span><br>I LIVING LABS 2022 - Cardio365</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                 <li><span>Bioinformatics Degree </span><br>Polytechnic Institute of Setúbal</li>
+                </ul>
+               </div>
+          </div>
         </div>
 
       </div>
@@ -86,13 +111,15 @@
 
     </div>
   </div>
-  <button id="morework" type="submit"> See More</button>
+  <button id="morework" type="submit"> <a href="https://www.github.com/Sepay"> My Github</a></button>
   <!-- ---------------------contact-------------- -->
   <div id="contact">
     <div class="container">
+      <div class="subtitle">
+        <h1>Contact Me</h1>
+      </div>
       <div class="row">
         <div class="contact-left">
-              <h1>Contact Me</h1>
               <p><i class="fas fa-envelope"></i>pntorodrig01998@gmail.com</p>
               <div class="social-icons">
                 <a href="https://www.linkedin.com/in/rodrigo-pinto-28367a287/"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -105,7 +132,7 @@
           <form>
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
             <button id="submit" type="submit">Submit</button>
           </form>
         </div>
