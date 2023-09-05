@@ -138,7 +138,6 @@ body {
     margin-left: 20px;
     flex-basis: 70%; 
     display: none;
-    justify-content: space-between;
   }
 
   .tab-contents span{
@@ -302,5 +301,21 @@ body {
   }
   .titleabout span{
     color: aqua;
+  }
+
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid aqua;
+    padding: 14px 50px;
+    border-radius: 6px;
+    transition: 0.15s;
+  }
+
+  .btn:hover{
+    background-color: aqua;
+    color: black;
+    
   }
   
