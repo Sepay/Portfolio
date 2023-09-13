@@ -76,7 +76,7 @@ body {
     flex-basis: 35%;
   }
   .aboutleft img{
-    height: 600px;
+    height: 90%;
     width: 80%;
     border-radius: 15px;
     margin-top: 30px;
@@ -226,12 +226,13 @@ body {
     overflow: hidden;
   }
   .work img{
+    width: 80%;
     border-radius: 10px;
     display: block;
     
   }
   .layer{
-    width: 79%;
+    width: 80%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), aqua);
     border-radius: 10px;
@@ -267,7 +268,7 @@ body {
     border-color: aqua;
     color: aliceblue;
     border-radius: 7px;
-    margin-left: 890px;
+    margin-left: 800px;
     transition: 0.2s;
     font-size: 15px;
     margin-bottom: 20px;
